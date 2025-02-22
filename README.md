@@ -24,7 +24,7 @@ Convert text messages into Morse code and display them by blinking an LED! ✨
 - Uses an LED to transmit the message in dots and dashes.
 - Prompts the user for a new message to send.
 
-### 💡 LED Blinking
+### 💡 LED Blinking (Cronometer)
 
 A simple script to make the Raspberry Pi Pico's built-in LED blink. Ideal for testing digital output.
 

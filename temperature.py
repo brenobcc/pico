@@ -6,10 +6,10 @@ def calculateInternalTemp(sensor_temp):
 
     conversion_constant = 3.3 / 65535
     
-    temp_ref = 27 # ºC
-    volt_ref = 0.706 # V
+    temp_ref = 27 # ºC (architeture)
+    volt_ref = 0.706 # V (architeture)
     
-    temp_coef = 0.001721 # dV/dT
+    temp_coef = 0.001721 # dV/dT (architeture)
 
     voltage = conversion_constant * reading
     temperature = temp_ref - (voltage - volt_ref) / temp_coef
@@ -21,6 +21,6 @@ sensor_temp = ADC(4)
 while True:
     temp = calculateInternalTemp(sensor_temp)
     
-    print(f"Temperatura Raspberry: {temp}")
+    print(f"Raspberry Temperature: {temp} °C")
     
     sleep(1)
