@@ -6,8 +6,8 @@ def calculateInternalTemp(sensor_temp):
 
     conversion_constant = 3.3 / 65535
     
-    temp_ref = 27 #ºC
-    volt_ref = 0.706 #V
+    temp_ref = 27 # ºC
+    volt_ref = 0.706 # V
     
     temp_coef = 0.001721 # dV/dT
 
